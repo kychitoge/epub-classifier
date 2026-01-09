@@ -1,0 +1,40 @@
+{
+  "API_KEYS": {
+    "GOOGLE_API_KEY": "AIzaSyDbjvYe4puLf5EuBPdCo9xtBhwmjgFZdsM",
+    "METRUYENCV_COOKIE": ""
+  },
+  "AI_ALLOWED": false,
+  "AI_STRATEGY": {
+    "PRIMARY": {
+      "NAME": "gemma-3-27b-it",
+      "RPM": 30,
+      "BATCH_SIZE": 5
+    },
+    "FALLBACK": {
+      "NAME": "gemini-2.0-flash-exp",
+      "RPM": 5,
+      "BATCH_SIZE": 4
+    }
+  },
+  "SYSTEM": {
+    "MAX_WORKERS": 10,
+    "SAVE_INTERVAL": 20
+  },
+  "PATHS": {
+    "INPUT_FOLDER": "books",
+    "OUTPUT_BASE_FOLDER": "Output",
+    "DB_FILE": "master_data.xlsx",
+    "LOG_FILE": "app.log",
+    "CACHE_DIR": ".cache"
+  },
+  "FEATURES": {
+    "DRY_RUN": false,
+    "RESUME_ENABLED": true,
+    "CACHE_ENABLED": true,
+    "HEADLESS_BROWSER": false
+  },
+  "WEB_SEARCH": {
+    "CAPTCHA_COOLDOWN_MINUTES": 10
+  }
+}
+
